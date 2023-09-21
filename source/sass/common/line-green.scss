@@ -1,0 +1,38 @@
+/*------Line-green-style------*/
+@use "../common/variables";
+
+.line-green {
+  position: relative;
+
+  @media (min-width:$tablet-width) {
+    padding: 0px 0px 0px 30px;
+  }
+}
+
+.line-green__title {
+  position: relative;
+  color: #000000;
+  z-index: 2;
+  display: inline-block;
+  font-family: $font-base;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 0px 20px 0px 20px;
+  background-color: #FFFFFF;
+
+}
+
+.line-green::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0px;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 2px;
+  background-color: $base-green;
+}

@@ -1,0 +1,40 @@
+/*------Main-footer-style------*/
+@use "../common/variables";
+
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px 40px 20px;
+}
+
+.main-footer__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 20px 0px 20px 0px;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.link-copyright__text {
+  color: #444444;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  }
