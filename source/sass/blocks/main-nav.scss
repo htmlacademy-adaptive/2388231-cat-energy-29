@@ -1,0 +1,53 @@
+/*------Main-nav-style------*/
+@use "../common/variables";
+.main-nav {
+
+}
+.main-nav--closed .main-nav__list {
+  top:-225px;
+
+}
+.main-nav__toggle {
+  width: 24px;
+  height: 24px;
+  transition: all 0.1s linear;
+  position: relative;
+  z-index: 3;
+  top: -3px;
+  right: -3px;
+
+  &--closed {
+    background: #ffffff url("../img/icons/icon-open-menu.svg") no-repeat center;
+  }
+  &--opened {
+    background: #ffffff url("../img/icons/icon-close-menu.svg") no-repeat center;
+  }
+
+}
+
+.main-nav--opened .main-nav__list {
+  top: 67px;
+}
+.main-nav__list {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  overflow: auto;
+  transition: all 0.5s linear;
+}
+.main-nav__link {
+  display: block;
+  background-color: #ffffff;
+  padding: 22px 0 24px 0;
+  border-bottom: 1px solid #E6E6E6;
+  color: #000000;
+  font-family: variables.$font-base;
+  font-size: 20px;
+  line-height: 19px;
+  text-transform: uppercase;
+  transition: all 1s linear;
+  &--support {}
+  }

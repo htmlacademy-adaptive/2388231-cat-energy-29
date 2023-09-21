@@ -1,0 +1,9 @@
+/*------Container-style------*/
+.container{
+  margin: 0 auto;
+  padding: 0px 20px;
+  max-width: 1280px;
+  @media (min-width: 767px) {
+    padding: 0px 70px;
+  }
+}

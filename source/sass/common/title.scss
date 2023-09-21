@@ -1,0 +1,21 @@
+/*------Title-style------*/
+@use "../common/variables";
+
+.title-page {
+  font-family: $font-base;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  color: #000000;
+}
+
+.title-page--index{
+  color: #FFFFFF;
+}
+.title{
+  color: #000;
+  font-family: $font-base;
+  font-size: 36px;
+  line-height: 40px;
+}
